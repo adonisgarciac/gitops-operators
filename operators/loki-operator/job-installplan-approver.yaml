@@ -85,7 +85,7 @@ spec:
         imagePullPolicy: Always
         env:
         - name: SUBSCRIPTION_CSV
-          value: 5.8.0
+          value: loki-operator.v5.8.0
         - name: SUBSCRIPTION
           value: loki-operator
       dnsPolicy: ClusterFirst

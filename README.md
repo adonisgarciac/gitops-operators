@@ -15,6 +15,12 @@ Patch openshift-gitops to add resourceHealthChecks
 oc patch ArgoCD openshift-gitops --patch-file ocp-gitops/patch.yaml -n openshift-gitops --type merge
 ```
 
+## Add cluster admin role to argod SA
+
+```
+oc apply -f ocp-gitops/clusterrole.yaml
+```
+
 ## Create appset
 
 ```
