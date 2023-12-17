@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: installplan-approver
-        image: registry.redhat.io/openshift4/ose-cli:v4.12
+        image: registry.redhat.io/openshift4/ose-cli:v4.10@sha256:7804ea66ea8ca0f414148b8b3b52ae454800785e80a32bd8a5eb2db789014a00
         command:
           - /bin/bash
           - -c
