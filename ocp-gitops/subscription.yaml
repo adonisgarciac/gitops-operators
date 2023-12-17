@@ -8,6 +8,6 @@ spec:
   channel: gitops-1.11
   installPlanApproval: Manual
   name: openshift-gitops-operator
-  source: redhat-operators-index
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
 ...

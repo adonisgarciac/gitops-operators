@@ -8,7 +8,7 @@ spec:
   channel: stable-5.8
   installPlanApproval: Manual
   name: loki-operator
-  source: redhat-operators-index
+  source: redhat-operators
   sourceNamespace: openshift-marketplace
   startingCSV: 5.8.0
 ...

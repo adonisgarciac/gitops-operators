@@ -12,11 +12,11 @@ Wait until openshift-gitops is ready
 Patch openshift-gitops to add resourceHealthChecks
 
 ```
-oc apply -f ocp-gitops/patch.yaml
+oc patch ArgoCD openshift-gitops --patch-file ocp-gitops/patch.yaml -n openshift-gitops --type merge
 ```
 
 ## Create appset
 
 ```
-oc apply -f ocp-gitops/operators-appset.yaml
+oc apply -f ocp-gitops/operators-appset.yaml -n openshift-gitops
 ```

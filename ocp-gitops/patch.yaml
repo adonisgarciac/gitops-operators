@@ -1,4 +1,9 @@
 ---
+apiVersion: argoproj.io/v1beta1
+kind: ArgoCD
+metadata:
+  namespace: openshift-gitops
+  name: openshift-gitops
 spec:
  resourceHealthChecks:
   - group: argoproj.io
