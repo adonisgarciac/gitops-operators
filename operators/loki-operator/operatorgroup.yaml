@@ -6,6 +6,5 @@ metadata:
     argocd.argoproj.io/sync-wave: "-50"
   name: openshift-operators-redhat
   namespace: openshift-operators-redhat
-spec:
-  upgradeStrategy: Default
+spec: {}
 ...
