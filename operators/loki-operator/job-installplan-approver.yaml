@@ -35,7 +35,7 @@ spec:
               # done seem to have a function for checking if a value is in an array without iterating. so here we are.
               # NOTE 1: if for whatever reason multiple InstallPlans are found that are associated with the Subscription for the correct CSV, only the first will be approved
               # NOTE 2: this is nested in {{` `}} so that helm doesn't try to interpret the go template
-              {{`installPlanGoTemplate=$(cat << EOF
+              installPlanGoTemplate=$(cat << EOF
               {{- \$installPlanName := "" -}}
               {{- range .items -}}
                 {{- \$installPlanItem := . -}}
@@ -51,7 +51,7 @@ spec:
               {{- end -}}
               {{ \$installPlanName }}
             EOF
-              )`}}
+              )
 
               echo
               echo "Get InstallPlan for CSV (${SUBSCRIPTION_CSV}) with Subscription (${SUBSCRIPTION_CSV}) (${subscriptionUID}) owner"
