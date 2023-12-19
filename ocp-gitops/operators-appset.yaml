@@ -12,7 +12,8 @@ spec:
       repoURL: https://github.com/adonisgarciac/gitops-operators.git
       revision: main
       directories:
-        - path: operators/loki-operator
+        #- path: operators/loki-operator
+        - path: operators-installer
   template:
     metadata:
       name: '{{path.basename}}'
